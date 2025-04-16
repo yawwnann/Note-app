@@ -1,5 +1,3 @@
-// YUWANANTA VALENCIA AFSHANDY
-// FC-18
 class NoteForm extends HTMLElement {
   constructor() {
     super();
