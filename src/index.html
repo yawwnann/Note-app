@@ -1,26 +1,27 @@
-<!-- YUWANANTA VALENCIA AFSHANDY -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aplikasi Catatan</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>Aplikasi Catatan</title>
   </head>
   <body>
     <div class="container">
       <h1>Aplikasi Catatan</h1>
+
+      <button
+        id="toggleArchivedView"
+        style="margin-bottom: 1rem; padding: 0.5rem 1rem; cursor: pointer"
+      >
+        Tampilkan Catatan Terarsip
+      </button>
       <note-form></note-form>
       <note-list></note-list>
     </div>
     <note-modal></note-modal>
-    <script src="noteForm.js"></script>
-    <script src="noteItem.js"></script>
-    <script src="noteList.js"></script>
-    <script src="noteModal.js"></script>
   </body>
 </html>

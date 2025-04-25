@@ -1,0 +1,104 @@
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --secondary-bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --accent-red: #ef4444;
+  --accent-orange: #f59e0b;
+  --accent-green: #10b981;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+  background: transparent;
+  padding: 0 1rem;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+}
+
+#toggleArchivedView {
+  display: block;
+  margin: 0 auto 2.5rem auto;
+  padding: 0.6rem 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow-sm);
+}
+
+#toggleArchivedView:hover {
+  background-color: #f9fafb;
+  color: var(--text-primary);
+  border-color: #d1d5db;
+  box-shadow: var(--shadow-md);
+}
+
+note-form {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  #toggleArchivedView {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  note-form {
+    max-width: 95%;
+    margin-bottom: 2rem;
+  }
+}
